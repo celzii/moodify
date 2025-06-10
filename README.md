@@ -1,7 +1,6 @@
 # Moodify 🎵
 
-Moodify adalah aplikasi pemutar musik yang dirancang dengan antarmuka mirip Spotify. Aplikasi ini memungkinkan pengguna menjelajahi musik berdasarkan suasana hati dan menyimpan lagu-lagu favorit mereka ke dalam koleksi pribadi.
-
+Moodify adalah aplikasi pemutar musik yang dirancang dengan antarmuka mirip Spotify. Aplikasi ini memungkinkan pengguna menjelajahi musik dengan tampilan yang manis 
 ---
 
 ## 🚀 Fitur Utama
