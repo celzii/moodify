@@ -35,44 +35,16 @@ Moodify adalah aplikasi pemutar musik yang dirancang dengan antarmuka mirip Spot
 
 ---
 
-## 📂 Struktur Project
-app/src/main/java/com/example/moodify/
-├── auth/
-│   ├── LastPlayedManager.dex
-│   ├── SpotifyAuthUtil.dex
-│   ├── SpotifyTokenExchange.dex
-│   ├── SpotifyTokenRefresher.dex
-│   └── TokenManager.dex
-│   (plus beberapa inner class seperti $1, $TokenCallback, dll.)
-│
-├── home/
-│   ├── CollectionFragment.dex
-│   ├── GenreFragment.dex
-│   ├── HomeFragment.dex
-│   ├── LoginFragment.dex
-│   ├── LastPlayedActivity.dex
-│   ├── MainActivity.dex
-│   ├── MusicPlayerActivity.dex
-│   ├── PlaylistFragment.dex
-│   └── SearchFragment.dex
-│   (plus beberapa inner class $1, $2, dll.)
-│
-├── response/
-│   ├── GenreItem.dex
-│   ├── PlaylistItem.dex
-│   └── SongItem.dex
-│
-├── ui/
-│   ├── GenreAdapter.dex
-│   ├── PlaylistAdapter.dex
-│   └── SongAdapter.dex
-│   (plus inner class seperti ViewHolder dan Listener)
-│
-└── util/
-    ├── DummyFeaturedPlaylists.dex
-    ├── DummyGenrePlaylists.dex
-    ├── DummyGenres.dex
-    └── DummyTopCharts.dex
+## 📂 Tampilan Project
+
+![image](https://github.com/user-attachments/assets/68a3501c-2b34-44eb-a3d7-9bac6adecc47)
+![image](https://github.com/user-attachments/assets/fdc51592-a53e-4976-842b-c2872e532f95)
+![image](https://github.com/user-attachments/assets/281f4bfe-dd65-41ba-b176-3c5a4cd4c7da)
+![image](https://github.com/user-attachments/assets/9b98284e-e012-46a5-917f-c5266a2bcd2f)
+![image](https://github.com/user-attachments/assets/165d7f97-3477-4c94-a5b0-ea926722ce6d)
+![image](https://github.com/user-attachments/assets/74871fbe-6268-4952-bf4d-36cd6bcf6846)
+![image](https://github.com/user-attachments/assets/59b81c39-332b-4e25-8e8a-721263c892a5)
+![image](https://github.com/user-attachments/assets/854e5441-725f-4f66-aa71-5a721c99a6d3)
 
 
 
