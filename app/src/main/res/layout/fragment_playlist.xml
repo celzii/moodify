@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".home.PlaylistFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <!-- Tombol back dan more -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_back_pink"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <!-- Cover Playlist -->
+            <ImageView
+                android:id="@+id/imagePlaylistCover"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:background="@drawable/imgplaylist"
+                android:clipToOutline="true"
+                android:layout_marginTop="16dp" />
+
+            <!-- Judul Playlist -->
+            <TextView
+                android:id="@+id/textPlaylistTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lo-Fi Vibes"
+                android:textSize="20sp"
+                android:fontFamily="@font/mochiy_pop_one_regular"
+                android:gravity="center"
+                android:layout_marginTop="8dp" />
+
+            <!-- Caption -->
+            <TextView
+                android:id="@+id/textPlaylistCaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Playlist santai untuk belajar dan relax."
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:layout_marginTop="6dp" />
+
+            <!-- Author -->
+            <LinearLayout
+                android:id="@+id/authorLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/spotify" />
+
+                <TextView
+                    android:id="@+id/textPlaylistAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Spotify"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_semibold" />
+            </LinearLayout>
+
+            <!-- Info lagu -->
+            <LinearLayout
+                android:id="@+id/barInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:id="@+id/textSongCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 lagu"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_regular" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" • "
+                    android:layout_marginHorizontal="6dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textPlaylistDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45 menit"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_regular" />
+            </LinearLayout>
+
+
+            <!-- RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewSongs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginTop="16dp"
+                android:clipToPadding="false"
+                android:paddingBottom="80dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom navigation tetap di bawah -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bubblegum"
+        app:itemIconTint="@null"
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>

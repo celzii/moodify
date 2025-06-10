@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="16dp"
+    android:id="@+id/activity_music_player">
+
+    <!-- Back button -->
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_down_pink"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- More options -->
+    <ImageView
+        android:id="@+id/btnMore"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_more_pink"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Judul Lagu"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_below="@id/btnBack"
+        android:layout_marginTop="24dp"
+        android:gravity="center" />
+
+    <!-- Artist -->
+    <TextView
+        android:id="@+id/textArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Artis"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_below="@id/textTitle"
+        android:layout_marginTop="4dp"
+        android:gravity="center" />
+
+    <!-- Cover Art -->
+    <ImageView
+        android:id="@+id/imageCover"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textArtist"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/imgsong"
+        android:clipToOutline="true"/>
+
+    <!-- SeekBar -->
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageCover"
+        android:layout_marginTop="24dp"
+        android:progressTint="@color/bubblegum"
+        android:thumbTint="@color/bubblegum" />
+
+    <!-- Waktu -->
+    <LinearLayout
+        android:id="@+id/timeLayout"
+        android:layout_below="@id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textCurrentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/textTotalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3:45"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <!-- Playback Buttons -->
+    <LinearLayout
+        android:id="@+id/playbackControls"
+        android:layout_below="@id/timeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/btnShuffle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_shuffle_pink"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/btnPrevious"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_skiptostart_pink"
+            android:padding="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnPlayPause"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_play_pink"
+            android:background="@drawable/circle_button_bg"
+            android:padding="16dp" />
+
+        <ImageView
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_skipforward_pink"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/btnRepeat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_repeat_pink"
+            android:padding="8dp" />
+    </LinearLayout>
+
+</RelativeLayout>

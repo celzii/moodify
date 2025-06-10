@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#FFF9F1</color>
+    <color name="bubblegum">#F7A8B8</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cream">#FFF9F1</color>
+    <color name="pink_muda_terang">#EE44CC</color>
+
+        <!-- Warna dasar untuk tema malam -->
+        <color name="md_theme_primary_night">#D0BCFF</color> <!-- Contoh dari Material 3 Theme Builder -->
+        <color name="md_theme_onPrimary_night">#381E72</color>
+        <color name="md_theme_primaryContainer_night">#4F378A</color>
+        <color name="md_theme_onPrimaryContainer_night">#EADDFF</color>
+
+        <color name="md_theme_secondary_night">#CCC2DC</color>
+        <color name="md_theme_onSecondary_night">#332D41</color>
+        <color name="md_theme_secondaryContainer_night">#4A4458</color>
+        <color name="md_theme_onSecondaryContainer_night">#E8DEF8</color>
+
+        <color name="md_theme_tertiary_night">#EFB8C8</color>
+        <color name="md_theme_onTertiary_night">#492532</color>
+        <color name="md_theme_tertiaryContainer_night">#633B48</color>
+        <color name="md_theme_onTertiaryContainer_night">#FFD8E4</color>
+
+        <color name="md_theme_error_night">#F2B8B5</color>
+        <color name="md_theme_onError_night">#601410</color>
+        <color name="md_theme_errorContainer_night">#8C1D18</color>
+        <color name="md_theme_onErrorContainer_night">#F9DEDC</color>
+
+        <color name="md_theme_background_night">#1C1B1F</color> <!-- Latar belakang utama aplikasi -->
+        <color name="md_theme_onBackground_night">#E6E1E5</color> <!-- Teks/ikon di atas latar belakang -->
+
+        <color name="md_theme_surface_night">#1C1B1F</color> <!-- Permukaan komponen seperti Card, Sheet -->
+        <color name="md_theme_onSurface_night">#E6E1E5</color> <!-- Teks/ikon di atas permukaan -->
+        <color name="md_theme_surfaceVariant_night">#49454E</color>
+        <color name="md_theme_onSurfaceVariant_night">#CAC4CF</color>
+        <color name="md_theme_outline_night">#948F99</color>
+
+        <!-- Anda bisa menambahkan warna spesifik Anda di sini juga -->
+        <color name="bubblegum_night">#B51752</color> <!-- Versi bubblegum yang lebih gelap/sesuai malam -->
+        <color name="pink_muda_terang_night">#F0A0B0</color> <!-- Versi pink_muda_terang yang disesuaikan malam -->
+
+        <!-- Warna dasar dari file XML Anda sebelumnya, dikoreksi -->
+        <color name="custom_primary_night">#6C63FF</color>
+        <color name="custom_primary_dark_night">#2D313D</color> <!-- Mungkin tidak digunakan langsung di Material 3 -->
+        <color name="custom_accent_night">#03DAC5</color> <!-- `colorAccent` lebih ke Material 2, M3 menggunakan secondary/tertiary -->
+
+
+</resources>

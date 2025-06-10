@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bubblegum"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.LoginFragment">
+    
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/cream">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_moodify"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/mochiy_pop_one_regular"
+                android:text="Welcome to Modify"
+                android:layout_marginBottom="8dp"
+                android:textSize="25sp" />
+
+
+            <Button
+                android:id="@+id/btnLoginSpotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:backgroundTint="@color/pink_muda_terang"
+                android:fontFamily="@font/mochiy_pop_one_regular"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:text="Login with Spotify" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
