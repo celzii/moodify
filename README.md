@@ -36,76 +36,44 @@ Moodify adalah aplikasi pemutar musik yang dirancang dengan antarmuka mirip Spot
 ---
 
 ## 📂 Struktur Project
-└───com
-│   │   │   │                   └───example
-│   │   │   │                       └───moodify
-│   │   │   │                           ├───auth
-│   │   │   │                           │       LastPlayedManager.dex
-│   │   │   │                           │       SpotifyAuthUtil$1.dex
-│   │   │   │                           │       SpotifyAuthUtil$TokenCallback.dex
-│   │   │   │                           │       SpotifyAuthUtil.dex
-│   │   │   │                           │       SpotifyTokenExchange$1.dex
-│   │   │   │                           │       SpotifyTokenExchange$TokenCallback.dex
-│   │   │   │                           │       SpotifyTokenExchange.dex
-│   │   │   │                           │       SpotifyTokenRefresher$1.dex
-│   │   │   │                           │       SpotifyTokenRefresher$RefreshCallback.dex
-│   │   │   │                           │       SpotifyTokenRefresher.dex
-│   │   │   │                           │       TokenManager.dex
-│   │   │   │                           │
-│   │   │   │                           ├───home
-│   │   │   │                           │       CollectionFragment$1.dex
-│   │   │   │                           │       CollectionFragment$2.dex
-│   │   │   │                           │       CollectionFragment$3.dex
-│   │   │   │                           │       CollectionFragment$4.dex
-│   │   │   │                           │       CollectionFragment.dex
-│   │   │   │                           │       GenreFragment$1.dex
-│   │   │   │                           │       GenreFragment$2.dex
-│   │   │   │                           │       GenreFragment.dex
-│   │   │   │                           │       HomeFragment$1.dex
-│   │   │   │                           │       HomeFragment$2.dex
-│   │   │   │                           │       HomeFragment$3.dex
-│   │   │   │                           │       HomeFragment$4.dex
-│   │   │   │                           │       HomeFragment.dex
-│   │   │   │                           │       LastPlayedActivity.dex
-│   │   │   │                           │       LoginFragment.dex
-│   │   │   │                           │       MainActivity$1.dex
-│   │   │   │                           │       MainActivity$2.dex
-│   │   │   │                           │       MainActivity$3.dex
-│   │   │   │                           │       MainActivity.dex
-│   │   │   │                           │       MusicPlayerActivity$1.dex
-│   │   │   │                           │       MusicPlayerActivity.dex
-│   │   │   │                           │       PlaylistFragment$1.dex
-│   │   │   │                           │       PlaylistFragment$2.dex
-│   │   │   │                           │       PlaylistFragment$3.dex
-│   │   │   │                           │       PlaylistFragment$4$1.dex
-│   │   │   │                           │       PlaylistFragment$4.dex
-│   │   │   │                           │       PlaylistFragment.dex
-│   │   │   │                           │       SearchFragment$1.dex
-│   │   │   │                           │       SearchFragment$2.dex
-│   │   │   │                           │       SearchFragment$3.dex
-│   │   │   │                           │       SearchFragment$4.dex
-│   │   │   │                           │       SearchFragment.dex
-│   │   │   │                           │
-│   │   │   │                           ├───response
-│   │   │   │                           │       GenreItem.dex
-│   │   │   │                           │       PlaylistItem.dex
-│   │   │   │                           │       SongItem.dex
-│   │   │   │                           │
-│   │   │   │                           ├───ui
-│   │   │   │                           │       GenreAdapter$GenreViewHolder.dex
-│   │   │   │                           │       GenreAdapter$OnGenreClickListener.dex
-│   │   │   │                           │       GenreAdapter.dex
-│   │   │   │                           │       PlaylistAdapter$OnItemClickListener.dex
-│   │   │   │                           │       PlaylistAdapter$PlaylistViewHolder.dex
-│   │   │   │                           │       PlaylistAdapter.dex
-│   │   │   │                           │       SongAdapter$SongViewHolder.dex
-│   │   │   │                           │       SongAdapter.dex
-│   │   │   │                           │
-│   │   │   │                           └───util
-│   │   │   │                                   DummyFeaturedPlaylists.dex
-│   │   │   │                                   DummyGenrePlaylists.dex
-│   │   │   │                                   DummyGenres.dex
-│   │   │   │                                   DummyTopCharts.dex
+app/src/main/java/com/example/moodify/
+├── auth/
+│   ├── LastPlayedManager.dex
+│   ├── SpotifyAuthUtil.dex
+│   ├── SpotifyTokenExchange.dex
+│   ├── SpotifyTokenRefresher.dex
+│   └── TokenManager.dex
+│   (plus beberapa inner class seperti $1, $TokenCallback, dll.)
+│
+├── home/
+│   ├── CollectionFragment.dex
+│   ├── GenreFragment.dex
+│   ├── HomeFragment.dex
+│   ├── LoginFragment.dex
+│   ├── LastPlayedActivity.dex
+│   ├── MainActivity.dex
+│   ├── MusicPlayerActivity.dex
+│   ├── PlaylistFragment.dex
+│   └── SearchFragment.dex
+│   (plus beberapa inner class $1, $2, dll.)
+│
+├── response/
+│   ├── GenreItem.dex
+│   ├── PlaylistItem.dex
+│   └── SongItem.dex
+│
+├── ui/
+│   ├── GenreAdapter.dex
+│   ├── PlaylistAdapter.dex
+│   └── SongAdapter.dex
+│   (plus inner class seperti ViewHolder dan Listener)
+│
+└── util/
+    ├── DummyFeaturedPlaylists.dex
+    ├── DummyGenrePlaylists.dex
+    ├── DummyGenres.dex
+    └── DummyTopCharts.dex
+
 
 
 ---
