@@ -7,7 +7,7 @@ Moodify adalah aplikasi pemutar musik yang dirancang dengan antarmuka mirip Spot
 
 - Menampilkan daftar lagu berdasarkan mood.
 - Fitur **Search Lagu** seperti Spotify.
-- Halaman **Collection** mempelrihatkan lagu favorit.
+- Halaman **Collection** memperlihatkan lagu favorit.
 - Tampilan **Music Player** yang sederhana.
 - Halaman **Playlist** dengan cover dan daftar lagu.
 
