@@ -45,7 +45,7 @@ Moodify adalah aplikasi pemutar musik yang dirancang dengan antarmuka mirip Spot
 
 ## 🧑‍💻 Kontributor
 
-- H071231046 – [Nama Lengkap Kamu]
+- H071231046 – Chelsea Shelin Purnaria
 
 ---
 
