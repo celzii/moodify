@@ -40,3 +40,15 @@ Moodify adalah aplikasi pemutar musik yang dirancang dengan antarmuka mirip Spot
 
 ## 📂 Struktur Project
 
+
+---
+
+## 🧑‍💻 Kontributor
+
+- H071231046 – [Nama Lengkap Kamu]
+
+---
+
+## 📄 Lisensi
+
+Project ini dibuat untuk keperluan tugas praktikum dan tidak dimaksudkan untuk distribusi komersial.
